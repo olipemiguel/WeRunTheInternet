@@ -1,0 +1,20 @@
+{
+  "pt":{
+    "title": "consultores de criptomoedas",
+    "subtitle": "Nós corremos",
+    "button": "Agende uma consulta",
+    "menu": ["Início","Sobre nós","Processo","FAQs"],
+    "banner": ["Consultoria de Empresarial","Web Design","Web Desenvolvimento","Meme Coins","Crypto Coins","Blockchain Desenvolvimento","Marketing estratégico","Marketing de afiliados"],
+    "info": ["Entre em um reino de possibilidades ilimitadas com nossa empresa inovadora, onde","a inovação não conhece limites."],
+    "description": ["Crie sua própria empresa de criptografia/Web3","Líderes certificados da indústria","Crie conexões e redes exclusivas","Estratégias de Negócios e Marketing","Satisfação garantida"]
+  },
+  "en":{
+    "title": "crypto consultants",
+    "subtitle": "We Run",
+    "button": "Book a consultation",
+    "menu": ["Home","About Us","Process","FAQs"],
+    "banner": ["Business Consulting","Web Design","Web Development","Meme Coins","Crypto Coins","Blockchain Development","Strategic Marketing","Affiliate Marketing"],
+    "info": ["Step into a realm of limitless possibilities with our ground-breaking company, where","innovation knows no bounds."],
+    "description": ["Build Your Own Crypto / Web3 Company","Certified Industry Leaders","Create Exclusive Connections & Networks","Business & Marketing Strategies","Guaranteed Satisfaction"]
+  }
+}
