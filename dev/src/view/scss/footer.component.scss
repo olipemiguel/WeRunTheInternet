@@ -1,0 +1,24 @@
+.MainFooter{
+  width: 100dvw;
+  min-height: 78px;
+  max-height: max-content;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #24335266;
+  margin-top: 2.2rem;
+  gap: 1.3rem;
+  p{
+    font-family: "FontRegular";
+    font-size: clamp(0.8rem, 1.2468rem + 0.2774vw, 1.02rem);
+    color: #e9e9eb;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    line-height: 1.6;
+    transition: color 0.3s ease-in-out;
+  }
+}
+@media (max-width: 1024px) {
+  p{
+    font-size: clamp(0.7rem, 1.2468rem + 0.2774vw, 0.62rem) !important;
+  }
+}

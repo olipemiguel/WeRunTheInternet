@@ -1,0 +1,210 @@
+.MainBackground{
+  width: 100dvw;
+  min-height: 100dvh;
+  height: max-content;
+  background-image: url('/assets/img/main.png');
+  background-position-x: 50%, 50%;
+  background-position-y:  0px;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, cover;
+  box-sizing: border-box;
+  .MainBackgroundSecund{
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/img/mainTwo.png');
+    background-position-x: 50%, 50%;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    justify-content: center;
+    .ContentBox{
+      .MainHeader{
+        width: 100%;
+        height: 100px;
+        padding: 1rem;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        .MainLogo{
+          height: 57px;
+        }
+        .MainNav{
+          display: none;
+          background-color: var(--MainMenuNavBackground);
+          width: 250px;
+          position: absolute;
+          top: 100px;
+          right: 18px;
+          gap: 0.5rem;
+          ul{
+            list-style: none;
+            flex-direction: column;
+            width: 100%;
+            li{
+              width: 100%;
+              height: 50px;
+              align-items: center;
+              padding-left: 0.7rem;
+              border-bottom: 0.1rem solid var(--MainMenuBorder);
+              font-size: clamp(1rem, 1.2468rem + 0.2774vw, 1.2rem);
+              font-family: 'FontRegular';
+              transition: all 0.3s background-color;
+              &:last-child{
+                border-bottom: none;
+              }
+              &:hover, &:active, &:focus{
+                cursor: pointer;
+                background-color: var(--MainMenuBackgroundSecund);
+                color: #fff;
+              }
+            }
+          }
+        }
+        .MainMenu{
+          padding: 0.6rem;
+          font-size: clamp(1.6rem, 1.2468rem + 0.2774vw, 1.9rem);
+          color: var(--MainMenuColor);
+          background-color: var(--MainMenuBackground);
+          border-radius: 0.3rem;
+          transition: all 0.6s background-color;
+          &:hover, &:focus, &:active{
+            cursor: pointer;
+            background-color: var(--MainMenuBackgroundSecund);
+          }
+        }
+      }
+      .MainContent{
+        width: 100%;
+        min-height: calc(100vh - 100px);
+        height: max-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .InfoContent{
+          flex-direction: column;
+          align-items: center;
+          gap: 0.85rem;
+          .LabelContent{
+            user-select: none;
+            font-size: clamp(0.42rem, 1.2468rem + 0.2774vw, 0.57rem);
+            text-transform: uppercase;
+            color: var(--MainLabelColor);
+            letter-spacing: 0.08rem;
+            padding: 0.35rem 0.5rem;
+            background-color: var(--MainMenuBackgroundSecund);
+            border-radius: 1rem;
+            border: 1px solid var(--MainLabelBorder);
+          }
+          .LabelTitle{
+            line-height: 0.9;
+            font-size: clamp(5.42rem, 1.2468rem + 0.2774vw, 2.57rem);
+            font-family: 'FontBold';
+          }
+          .LabelSubTitle{
+            line-height: 1;
+            text-align: center;
+            background-image: radial-gradient(circle at 50% 50%, rgb(255, 255, 255), rgb(51, 221, 61) 43%, rgb(41, 199, 50));
+            color: transparent;
+            background-clip: text;
+            font-size: clamp(5.2rem, 1.2468rem + 0.2774vw, 3.82rem);
+            font-family: 'FontBold';
+          }
+        }
+        .ContentInfo{
+          margin-top: 1.5rem;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 1.2rem;
+          .LabelInfo{
+            font-size: clamp(1.23rem, 1.2468rem + 0.2774vw, 1.52rem);
+            text-align: center;
+            color: #B5B7B7;
+            line-height: 1.2;
+            span{
+              color: #ffffff;
+            }
+          }
+          .LinkInfo{
+            font-size: clamp(1.23rem, 1.2468rem + 0.2774vw, 1.52rem);
+            position: relative;
+            text-align: center;
+            border: 1px solid var(--MainLabelBorder);
+            padding: 0.85rem 1.5rem;
+            background-image: radial-gradient(circle at 0px -293%, rgba(18, 252, 29, 0.25), rgba(18, 252, 29, 0));
+            font-family: 'FontBold';
+            color: #ffffff;
+            transition: all 1.2s ease-in-out;
+            &:hover, &:focus, &:active{
+              cursor: pointer;
+              background-image: radial-gradient(circle at 0px -293%, rgba(18, 252, 29, 0.5), rgba(18, 252, 29, 0));
+              border: 1px solid rgba(18, 252, 29, 0.5);
+              transform: scale(1.02);
+            }
+          }
+          .InfoNav{
+            width: 70%;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1.5rem;
+            .InfoItem{
+              gap: 0.5rem;
+              .InfoItemIcon{
+                font-size: clamp(0.85rem, 1.2468rem + 0.2774vw, 1.18rem);
+                color: var(--MainLabelColor);
+              }
+              .InfoItemTitle{
+                font-size: clamp(0.45rem, 1.2468rem + 0.2774vw, 0.94rem);
+                font-family: 'FontBold';
+                color: #B5B7B7;
+                line-height: 1;
+              }
+            }
+          }
+          .InfoNext{
+            padding: 0.89rem 1.2rem;
+            border: 1px solid var(--MainLabelColor);
+            border-radius: 100%;
+            background-image: radial-gradient(circle at 0px -293%, rgba(18, 252, 29, 0.5), rgba(18, 252, 29, 0));
+            margin-top: 1.5rem;
+            &:hover, &:focus, &:active{
+              cursor: pointer;
+              background-image: radial-gradient(circle at 0px -293%, rgba(18, 252, 30, 0.747), rgba(18, 252, 29, 0));
+              border: 1px solid rgba(18, 252, 29, 0.5);
+            }
+            i{
+              width: 100%;
+              height: 100%;
+              animation: LinkAnimation 2s linear infinite;
+              font-size: clamp(0.65rem, 1.2468rem + 0.2774vw, 0.95rem);
+              color: #ffffff;
+              transition: all 0.5s ease-in-out;
+              &:hover, &:focus, &:active{
+                animation: unset;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes LinkAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+}
+@media (max-width: 1024px) {
+  .ContentBox{
+    width: 100% !important;
+  }
+  .LabelTitle{
+    font-size: clamp(1.9rem, 1.2468rem + 0.2774vw, 1.57rem) !important;
+  }
+  .LabelSubTitle{
+    font-size: clamp(1.9rem, 1.2468rem + 0.2774vw, 1.57rem) !important;
+  }
+}

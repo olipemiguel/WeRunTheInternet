@@ -1,0 +1,54 @@
+<div class="MainBackground">
+  <div class="MainBackgroundSecund flex">
+    <div class="ContentBox">
+      <header class="MainHeader flex">
+        <img class="MainLogo" src="/assets/img/logo.png">
+        <nav class="MainNav" [class.active]="MenuActive">
+          <ul>
+            <li [class.flex]="MenuActive"><a href="#home">Home</a></li>
+            <li [class.flex]="MenuActive"><a href="#about">About Us</a></li>
+            <li [class.flex]="MenuActive"><a href="#process">Process</a></li>
+            <li [class.flex]="MenuActive"><a href="#faqs">FAQs</a></li>
+          </ul>
+        </nav>
+        <i class="fa-sharp fa-solid fa-bars MainMenu" (click)="ActiveMenu()"></i>
+      </header>
+      <div class="MainContent flex">
+        <div class="InfoContent flex">
+          <p class="LabelContent">crypto consultants</p>
+          <span class="LabelTitle">We Run</span>
+          <span class="LabelSubTitle">Blockchain Development</span>
+        </div>
+        <div class="ContentInfo flex">
+          <p class="LabelInfo">Step into a realm of limitless possibilities with our ground-breaking <br/> company, where <span>innovation knows no bounds.</span></p>
+          <a href="http://" class="LinkInfo" target="_blank">Book a consultation</a>
+          <div class="InfoNav flex">
+            <div class="InfoItem flex">
+              <i class="fa-duotone fa-solid fa-check InfoItemIcon"></i>
+              <p class="InfoItemTitle">Build Your Own Crypto / Web3 Company</p>
+            </div>
+            <div class="InfoItem flex">
+              <i class="fa-duotone fa-solid fa-check InfoItemIcon"></i>
+              <p class="InfoItemTitle">Certified Industry Leaders</p>
+            </div>
+            <div class="InfoItem flex">
+              <i class="fa-duotone fa-solid fa-check InfoItemIcon"></i>
+              <p class="InfoItemTitle">Create Exclusive Connections & Networks</p>
+            </div>
+            <div class="InfoItem flex">
+              <i class="fa-duotone fa-solid fa-check InfoItemIcon"></i>
+              <p class="InfoItemTitle">Business & Marketing Strategies</p>
+            </div>
+            <div class="InfoItem flex">
+              <i class="fa-duotone fa-solid fa-check InfoItemIcon"></i>
+              <p class="InfoItemTitle">Guaranteed Satisfaction</p>
+            </div>
+          </div>
+          <a href="#about" class="InfoNext">
+            <i class="fa-sharp fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
